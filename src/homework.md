@@ -1,0 +1,11 @@
+- Create a repository
+- Initialize the repository
+- node_modules, pacakaje.json, pacakaje-lock.json
+- Install express  (npm i express)
+- Create a server
+- Listern to port 7777
+- write request handlers for /test ,/hello, and /
+- Install nodemon and update scripts inside pacakage.json (npm i -g nodemon )
+- What are dependencies
+- What is the use of -g while npm install
+- Difference between caret and tilde (^ vs ~)
