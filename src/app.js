@@ -2,26 +2,37 @@ const express = require("express");
 
 const app = express();
 
+app.use(
+  "/user",
+  [(req, res, next) => {
+    console.log("handling the route user");
+    next();
+  },
+  (req, res, next) => {
+    console.log("handling the route user 2");
+    //res.send("2nd Response!!");
+    next();
+  },
 
-// app.get("/user/:userId/:name/:password", (req, res) => {
+  (req, res,next) => {
+    console.log("handling the route user 3");
+   // res.send("3rd Response!!");
+    next();
+  }],
 
-//   console.log(req.query);
-//   console.log(req.params);
-//   res.send({
-//     firstName: "Nagababu",
-//     lastName: "Kantamaneni",
-//   });
-// });
+  (req, res,next) => {
+    console.log("handling the route user 4");
+    //res.send("4th Response!!");
+    next();
+    
+  },
 
-app.get("/user", (req, res) => {
-
-  console.log(req.query);
-  res.send({
-    firstName: "Nagababu",
-    lastName: "Kantamaneni",
-  });
-});
-
+   (req, res,next) => {
+    console.log("handling the route user 5");
+    res.send("5th Response!!");
+    
+  },
+);
 
 app.listen(7777, () => {
   console.log("server is successfully listening to port 7777");
