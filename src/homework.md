@@ -14,3 +14,11 @@
 - .gitignore
 - create remote repo on github
 - push all code to remote origin
+- play with routes and route extensions ex /hello, /, /hello2, /xyz
+- order of the routes matters a lot.
+- install postman app and make workspace, collection > test api call
+- write logic to handle GET,POST,PATCH,DELETE API CALLS and test them on postman
+- Explore routing and use of ?,+,(),* in the routes
+- Use of regex in routes /a/, /.*fly$/
+- Reading the query params in the routes
+- Reading the dynamic routes
