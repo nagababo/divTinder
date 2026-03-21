@@ -36,3 +36,7 @@
 - Install mongoose library
 - Connect your appication to the database "Connection-url/devTinder"
 - Call the connectionDB function and connect databases before starting application on 7777
+- Create a userschema and user Model
+- Create post /signup api call to add data to database
+- Push some documents using api calls from postman
+- Error handling using try /catch
