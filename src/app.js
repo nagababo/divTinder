@@ -3,35 +3,13 @@ const connectDB = require("./config/database");
 const app = express();
 const User = require("./models/user");
 
+app.use(express.json());
+
 app.post("/signup", async (req, res) => {
-  const userObj = {
-    firstName: "Nagababu",
-    lastName: "Kantamaneni",
-    emailId: "nagababo@gmail.com",
-    password: "1234",
-  };
+  console.log(req.body);
 
-  const userObj1 = {
-    firstName: "Viran",
-    lastName: "Kohli",
-    emailId: "virat@gmail.com",
-    password: "1234",
-  };
-
-  const userObj2 = {
-    firstName: "Sachin",
-    lastName: "Tendulkar",
-    emailId: "sachin@gmail.com",
-    password: "sachins1234",
-    _id: "123",
-  };
   // Creating a new instance of the user model
-  const user = new User({
-    firstName: "Sachin1",
-    lastName: "Tendulkar1",
-    emailId: "sachin@gmail.com",
-    password: "sachins1234",
-  });
+  const user = new User(req.body);
   try {
     await user.save();
 
@@ -40,6 +18,10 @@ app.post("/signup", async (req, res) => {
     res.status(400).send("Error saving the user:" + err.message);
   }
 });
+//Feed API - GET/Feed Get all the users from the database
+app.get("",()=>{
+
+})
 
 connectDB()
   .then(() => {

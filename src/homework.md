@@ -40,3 +40,22 @@
 - Create post /signup api call to add data to database
 - Push some documents using api calls from postman
 - Error handling using try /catch
+- difference between json object and javascript object
+- Add the express.json middleware
+- Make your signup api dynamic to receive data from the end user
+- User.findone, which object which will it return.
+- Get user by email
+- Feed API - Get-feed api
+- API Get user  by id
+- Create a delete user API
+- difference between patch and post
+- API - create a update user api
+- explore the mongoose  documentataion for  model methods
+- what are options in model.findoneandupdate method, explore more aboutit
+- API update the user with emailId
+- Explore schema type options from the documentation
+- add require , unique, lowercase, min, minlenght, trim
+- add default
+- create a custom validator function for gender
+- improve the DB schema - PUT all apprpriate validations on each field in schema
+- add time stamps to the schema
