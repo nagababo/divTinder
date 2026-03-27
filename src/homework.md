@@ -61,3 +61,5 @@
 - add time stamps to the schema
 - add api level validations and patch and sign up post api
 - add api validation for each field
+- install validator
+- explore validator library  and use validator functions for password , email
